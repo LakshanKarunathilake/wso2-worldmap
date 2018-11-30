@@ -1,0 +1,26 @@
+{
+  "name": "WorldMap",
+  "id": "WorldMap",
+  "thumbnailURL": "",
+  "configs": {
+    "pubsub": {
+      "types": ["publisher"]
+    },
+    "providerConfig": {
+      "configs": {
+        "type": "SiddhiStoreDataProvider",
+        "config": {
+          "siddhiApp": "@App:name('ChartProvider')@App:description('Defines the data store and the table for the quering')@store(type = 'rdbms', datasource = 'WORLD') define table country(code string, name string,continent string,region string,surfaceArea double,indepYear  int,population int,lifeExpectancy double,gnp double,gnpOld double,localName string,governmentForm string,headOfState string,capital double,code2 string);",
+          "queryData": {
+            "query": "from country select code,name,continent,region,surfaceArea,indepYear,population,lifeExpectancy,gnp,gnpOld,localName,governmentForm,headOfState,capital,code2"
+          },
+          "publishingInterval": 60
+        }
+      }
+    }
+  },
+  "chartConfigs": {
+    "x_axis": "name",
+    "y_axis": "surfaceArea"
+  }
+}

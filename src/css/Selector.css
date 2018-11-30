@@ -1,0 +1,25 @@
+.formControl {
+  margin: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-width: 120;
+  color: "#78909C";
+}
+
+.inputLabel {
+  color: "#78909C";
+}
+
+.helperText {
+  color: "#fe5200";
+  font-size: 0.5em;
+}
+
+.input {
+  color: "#78909C";
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,14 @@
+.HelloWorld {
+  font-size: 3em;
+  text-align: center;
+}
+
+.HelloWorld span {
+  font-weight: bold;
+  color: #fe5200;
+}
+
+.HelloWorld span span {
+  font-weight: bold;
+  color: black;
+}
